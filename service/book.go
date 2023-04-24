@@ -5,8 +5,8 @@ import (
 )
 
 type BookService interface {
-	CreateBook(in model.Book) (res model.Book, err error)
 	GetBookbyID(id int64) (res model.Book, err error)
+	CreateBook(in model.Book) (res model.Book, err error)
 	UpdateBookid(in model.Book) (res model.Book, err error)
 	DeleteBookid(id int64) (err error)
 	GetAllBooks() (res []model.Book, err error)

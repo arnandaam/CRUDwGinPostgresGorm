@@ -3,7 +3,7 @@ package service
 import "showcase/repository"
 
 type Service struct {
-	repo repository.RepoInterface
+	repo repository.RepoInterface //Repository repository.ProductRepository
 }
 
 type ServiceInterface interface {

@@ -120,6 +120,7 @@ func (h HttpServer) DeleteBookid(c *gin.Context) {
 	}
 
 	// panggil servise
+
 	err = h.app.DeleteBookid(int64(idint))
 	if err != nil {
 		helper.InternalServerError(c, err.Error())
